@@ -42,7 +42,9 @@ This is the one I cannot skip. The practice tests are aligned to actual exam sty
 
 The exam tests whether you can configure things, not just recognize them. Hands-on time is not optional for this one.
 
-Microsoft offers a free 90-day renewable tenant through the [Microsoft 365 Developer Program](https://developer.microsoft.com/microsoft-365/dev-program). Sign up with a personal Microsoft account, not a work account. The tenant comes pre-loaded with E5 licenses and sample users. Entra ID P2 is included, so everything needed for PIM and Identity Governance is right there.
+Microsoft makes it straightforward to spin up a trial tenant. Start a 30-day trial of Microsoft 365 E3 or E5 for up to 25 users. E5 is the better choice for SC-300 since it includes Entra ID P2, which unlocks PIM, Identity Governance, and the features that show up heavily on the exam.
+
+One thing to do immediately after the tenant is created: turn off recurring billing. Go into the Microsoft 365 admin center, find the subscription, and disable auto-renewal. Do not forget this step. The trial gives you 30 days at no cost as long as you cancel before it expires.
 
 Things to actually touch in the tenant:
 
@@ -54,7 +56,7 @@ Things to actually touch in the tenant:
 - [ ] Walk through the Identity Secure Score recommendations
 - [ ] Configure SSPR
 
-The dev tenant renews automatically as long as you show active usage. Build something, break something, fix it.
+Thirty days is enough time if you stay focused. Build something, break something, fix it.
 
 **The Order**
 
