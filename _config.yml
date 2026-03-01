@@ -1,0 +1,46 @@
+title: Wireless Hobo
+email: ""
+description: >-
+  Personal tech blog covering HomeLab, Microsoft 365, PowerShell,
+  Azure Active Directory, Virtualization, and Windows Server.
+baseurl: ""
+url: "https://wirelesshobo.com"
+github_username: wirelesshobo
+
+theme: minima
+
+minima:
+  skin: classic
+  date_format: "%B %-d, %Y"
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: page
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+  - .bundle/
