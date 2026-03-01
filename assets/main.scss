@@ -141,3 +141,88 @@ code {
   background-color: #f0f4f8;
   color: #086AAD;
 }
+
+// ============================================================
+// Sidebar layout
+// ============================================================
+
+.content-with-sidebar {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+
+  .main-content {
+    flex: 1;
+    min-width: 0; // prevent flex overflow
+  }
+
+  .sidebar {
+    width: 220px;
+    flex-shrink: 0;
+  }
+
+  // Stack vertically on smaller screens
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+
+    .sidebar {
+      width: 100%;
+    }
+  }
+}
+
+// Sidebar sections
+.sidebar-section {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #E6A756;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  p {
+    font-size: 0.9rem;
+    color: #555555;
+    margin-bottom: 0.4rem;
+  }
+
+  a {
+    font-size: 0.9rem;
+  }
+}
+
+.sidebar-heading {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #086AAD;
+  margin-bottom: 0.6rem;
+}
+
+.sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #eeeeee;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    a {
+      display: block;
+    }
+  }
+}
+
+.sidebar-meta {
+  display: block;
+  font-size: 0.78rem;
+  color: #888888;
+}

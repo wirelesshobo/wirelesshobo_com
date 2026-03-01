@@ -1,0 +1,39 @@
+<div class="sidebar-section">
+  <h3 class="sidebar-heading">About</h3>
+  <p>IT professional and home lab enthusiast writing about Microsoft 365, Entra ID, PowerShell, PRTG, and Windows Server.</p>
+  <a href="{{ '/about/' | relative_url }}">More &rarr;</a>
+</div>
+
+<div class="sidebar-section">
+  <h3 class="sidebar-heading">Recent Posts</h3>
+  <ul class="sidebar-list">
+    {%- for post in site.posts limit:5 -%}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="sidebar-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>
+
+{%- if site.categories.size > 0 -%}
+<div class="sidebar-section">
+  <h3 class="sidebar-heading">Categories</h3>
+  <ul class="sidebar-list">
+    {%- for category in site.categories -%}
+    <li>
+      {{ category[0] }}
+      <span class="sidebar-meta">({{ category[1].size }})</span>
+    </li>
+    {%- endfor -%}
+  </ul>
+</div>
+{%- endif -%}
+
+<div class="sidebar-section">
+  <h3 class="sidebar-heading">Links</h3>
+  <ul class="sidebar-list">
+    <li><a href="https://stancilconsulting.com" target="_blank" rel="noopener">Stancil Consulting</a></li>
+    <li><a href="https://github.com/wirelesshobo" target="_blank" rel="noopener">GitHub</a></li>
+  </ul>
+</div>
