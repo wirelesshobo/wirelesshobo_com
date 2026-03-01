@@ -233,3 +233,13 @@ code {
   font-size: 0.78rem;
   color: #888888;
 }
+
+.sidebar-headshot {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 0.75rem;
+  border: 3px solid #E6A756;
+}
