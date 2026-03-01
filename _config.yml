@@ -8,6 +8,7 @@ url: "https://wirelesshobo.github.io"
 github_username: wirelesshobo
 
 theme: minima
+show_excerpts: true
 
 minima:
   skin: classic
