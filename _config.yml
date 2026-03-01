@@ -1,10 +1,10 @@
-title: Wireless Hobo
+title: WirelessHobo
 email: ""
 description: >-
   Personal tech blog covering HomeLab, Microsoft 365, PowerShell,
   Azure Active Directory, Virtualization, and Windows Server.
-baseurl: ""
-url: "https://wirelesshobo.com"
+baseurl: "/wirelesshobo_com"
+url: "https://wirelesshobo.github.io"
 github_username: wirelesshobo
 
 theme: minima
