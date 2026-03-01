@@ -143,31 +143,33 @@ code {
 }
 
 // ============================================================
-// Sidebar layout
+// Sidebar layout — flat CSS (no nested @media, libsass safe)
 // ============================================================
 
 .content-with-sidebar {
   display: flex;
+  flex-direction: row;
   gap: 2rem;
   align-items: flex-start;
+}
 
-  .main-content {
-    flex: 1;
-    min-width: 0; // prevent flex overflow
-  }
+.content-with-sidebar .main-content {
+  flex: 1;
+  min-width: 0;
+}
 
-  .sidebar {
-    width: 220px;
-    flex-shrink: 0;
-  }
+.content-with-sidebar .sidebar {
+  width: 220px;
+  flex-shrink: 0;
+}
 
-  // Stack vertically on smaller screens
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .content-with-sidebar {
     flex-direction: column;
+  }
 
-    .sidebar {
-      width: 100%;
-    }
+  .content-with-sidebar .sidebar {
+    width: 100%;
   }
 }
 
@@ -176,20 +178,20 @@ code {
   margin-bottom: 1.75rem;
   padding-bottom: 1.5rem;
   border-bottom: 2px solid #E6A756;
+}
 
-  &:last-child {
-    border-bottom: none;
-  }
+.sidebar-section:last-child {
+  border-bottom: none;
+}
 
-  p {
-    font-size: 0.9rem;
-    color: #555555;
-    margin-bottom: 0.4rem;
-  }
+.sidebar-section p {
+  font-size: 0.9rem;
+  color: #555555;
+  margin-bottom: 0.4rem;
+}
 
-  a {
-    font-size: 0.9rem;
-  }
+.sidebar-section a {
+  font-size: 0.9rem;
 }
 
 .sidebar-heading {
@@ -201,24 +203,25 @@ code {
   margin-bottom: 0.6rem;
 }
 
-.sidebar-list {
+// Use .sidebar prefix for specificity over Minima's base ul styles
+.sidebar .sidebar-list {
   list-style: none;
   margin: 0;
   padding: 0;
+}
 
-  li {
-    padding: 0.25rem 0;
-    font-size: 0.9rem;
-    border-bottom: 1px solid #eeeeee;
+.sidebar .sidebar-list li {
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #eeeeee;
+}
 
-    &:last-child {
-      border-bottom: none;
-    }
+.sidebar .sidebar-list li:last-child {
+  border-bottom: none;
+}
 
-    a {
-      display: block;
-    }
-  }
+.sidebar .sidebar-list li a {
+  display: block;
 }
 
 .sidebar-meta {
