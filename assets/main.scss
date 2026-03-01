@@ -1,0 +1,143 @@
+---
+---
+
+@import "minima";
+
+// ============================================================
+// WirelessHobo — color scheme matching stancilconsulting.com
+// Primary:  #086AAD (deep blue)
+// Accent:   #E6A756 (warm gold)
+// Text:     #2C2C2C
+// ============================================================
+
+// Header
+.site-header {
+  background-color: #086AAD;
+  border-top: 4px solid #E6A756;
+  border-bottom: none;
+
+  .site-title,
+  .site-title:visited {
+    color: #ffffff;
+    font-weight: 600;
+
+    &:hover {
+      color: #E6A756;
+      text-decoration: none;
+    }
+  }
+
+  .site-nav {
+    background-color: #086AAD;
+
+    .page-link {
+      color: #ffffff;
+
+      &:hover {
+        color: #E6A756;
+        text-decoration: none;
+      }
+    }
+
+    // Mobile nav toggle
+    .menu-icon > svg path {
+      fill: #ffffff;
+    }
+
+    @media screen and (max-width: 600px) {
+      background-color: #086AAD;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+
+      .trigger {
+        background-color: #086AAD;
+      }
+    }
+  }
+}
+
+// Body / text
+body {
+  color: #2C2C2C;
+}
+
+// Links
+a {
+  color: #086AAD;
+
+  &:visited {
+    color: #054d7a;
+  }
+
+  &:hover {
+    color: #E6A756;
+    text-decoration: none;
+  }
+}
+
+// Post and page headings
+h1, h2, h3 {
+  color: #086AAD;
+}
+
+// Post list — title links
+.post-link {
+  color: #086AAD;
+
+  &:visited {
+    color: #054d7a;
+  }
+
+  &:hover {
+    color: #E6A756;
+  }
+}
+
+// Post meta (date line)
+.post-meta {
+  color: #666666;
+}
+
+// Footer
+.site-footer {
+  background-color: #086AAD;
+  border-top: none;
+  color: rgba(255, 255, 255, 0.85);
+
+  a {
+    color: #E6A756;
+
+    &:visited {
+      color: #E6A756;
+    }
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+
+  .footer-heading {
+    color: #ffffff;
+  }
+
+  .contact-list,
+  .social-media-list {
+    color: rgba(255, 255, 255, 0.85);
+  }
+}
+
+// Horizontal rules
+hr {
+  border-color: #E6A756;
+}
+
+// Blockquotes — left border accent
+blockquote {
+  border-left-color: #E6A756;
+  color: #555555;
+}
+
+// Code
+code {
+  background-color: #f0f4f8;
+  color: #086AAD;
+}
