@@ -2,6 +2,7 @@
 layout: post
 title: "SC-300: The Plan, Revisited"
 date: 2026-03-01
+published: false
 categories: [Certification]
 tags: [SC-300, identity, azure-ad, study-guide]
 ---
